@@ -1,0 +1,278 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ *{
+     box-sizing: border-box;
+     /* border: 1px solid red; */
+     font-family: 'Open Sans', sans-serif;
+ }
+
+ html, body {
+     margin: 0;
+     height: 100%;
+ }
+
+
+ html {
+  background-image: url("./pattern.jpg");
+ }
+
+ div, ul, button, b{
+     margin: 0 auto;
+ }
+
+ /* ul div{
+     margin: 0 auto;
+ } */
+
+ h1{
+     color: white;
+ }
+
+ p{
+     text-align: center;
+ }
+
+ b{
+     text-align: center;
+     color: white;
+ }
+
+ form{
+     width: 50%;
+     margin: 0 auto;
+ }
+
+ li{
+     margin: 10px;
+     background-color: white;
+     height: 2em;
+     text-align: center;
+     padding: 5px;
+     cursor: pointer;
+     border: blue;
+ }
+
+ button{
+     border-radius: 5px;
+     cursor: pointer;
+     background-color: #f9d5e5;
+     color: white;
+ }
+
+ ul{
+     width: 75%;
+     list-style-type: none;
+     padding: 0px;
+ }
+
+
+ #content{
+     margin: 0 auto;
+     background-color: #e06377;
+     height: 1200px;
+ }
+
+
+ #title{
+     margin-left: 7px;
+ }
+
+ .incomplete{
+     background-color:#c83349;
+ }
+
+
+ .container{
+     margin: 0 auto;
+     width: 75%;
+ }
+
+ .container h1{
+     padding-top: 40px;
+     text-align: center;
+ }
+
+
+ .todo-item-container{
+     margin-bottom: 20px;
+     border-radius: 5px;
+ }
+
+ .todo-item-container button{
+     color: white;
+ }
+
+
+ .todo-body ul{
+     display: flex;
+     flex-direction: column;
+     align-items: center
+ }
+
+
+ .new-step-container{
+     display: flex;
+     background-color:#e06377;
+     flex-direction: column;
+     align-items: center;
+     width: 80%;
+ }
+
+ .new-step-container button{
+     background-color: red;
+ }
+
+
+ .new-step-top{
+     display: flex;
+     background-color: #e06377;
+     flex-direction: column;
+     align-items: center;
+     padding-top: 5px;
+ }
+
+ .new-step-top ul{
+     display: flex;
+     background-color:#e06377;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 0px;
+     margin: 0;
+ }
+
+ .new-step-top ul div{
+     display: flex;
+     background-color: #e06377;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .new-step-top ul div li{
+     width: 200px;
+ }
+
+ .new-step-top form{
+     display: flex;
+     background-color: #e06377;
+     flex-direction: column;
+     align-items: center;
+     width: 200px;
+ }
+
+ .new-step-top form button{
+     margin-top: 5px;
+     background-color:#eeac99;
+ }
+
+ .new-step-top ul div{
+     width:100%;
+ }
+
+ .new-step-top ul div li{
+     color: black;
+ }
+
+ .new-step-top ul{
+     width: 100px;
+ }
+
+ .add-new-todo{
+     width: 36%;
+     border-radius: 5px;
+     padding-top: 10px;
+     margin-top: 10px;
+     height: 10em;
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     padding-bottom: 5px;
+     font-size: 20px;
+     border: solid white 3px;
+     height: 235px;
+ }
+
+ .add-new-todo form{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     height: 150px;
+ }
+
+ .add-new-todo form input{
+     /* -moz-box-shadow:    inset 0 0 10px #c83349;
+     -webkit-box-shadow: inset 0 0 10px #c83349;
+     box-shadow:  inset 0 0 10px  #c83349; */
+     border-radius: 3px;
+ }
+
+
+ .add-new-todo form button{
+     height: 100px;
+ }
+
+
+ .step-container{
+     border-width: 3px 3px 3px 3px ;
+     border-style: solid;
+     border-color: white;
+
+
+     padding-bottom: 10px;
+     color: white;
+     border-bottom-right-radius: 5px;
+     border-bottom-left-radius: 5px;
+
+ }
+
+
+ .list-button-container{
+     width: 500px;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     background-color: white;
+     margin-top: 10px;
+     -moz-box-shadow:    inset 0 0 10px #c83349;
+     -webkit-box-shadow: inset 0 0 10px #c83349;
+     box-shadow:  inset 0 0 10px  #c83349;
+     /* border-radius: 5px; */
+ }
+
+ .list-button-container li{
+     width: 400px;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     background-color: white;
+ }
+
+ .form-wrapper label{
+     color: white;
+     margin: 4px;
+ }
+
+ .form-wrapper{
+     display: flex;
+     height: 100px;
+ }
+
+ .form-wrapper button{
+     background-color:#eeac99;
+ }
